@@ -168,7 +168,7 @@ body {
 
     .headline a {
         color: #E0E2E5;
-        text-decoration: none;
+        text-decoration: underline;/*додав підкреслення */
     }
 
         .headline a:hover {
