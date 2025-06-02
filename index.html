@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Новинний моніторинг</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactWatch - News Monitoring & Analysis</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Привіт, це мій новинний моніторинг</h1>
-  <p>Тут буде аналітика з RSS-стрічок</p>
+    <div class="container">
+        <header class="header">
+            <h1>FactWatch</h1>
+            <p>Моніторинг новин і аналіз дезінформації в реальному часі</p>
+        </header>
+
+        <aside class="sidebar">
+            <h3>В розробці</h3>
+            <ul class="nav-list">
+                <li><a href="#" class="active">Live Analysis</a></li>
+                <li><a href="#">==========</a></li>
+                <li><a href="#">==========</a></li>
+                <li><a href="#">==========</a></li>
+                <li><a href="#">==========</a></li>
+                <li><a href="#">==========</a></li>
+                <li><a href="#">==========</a></li>
+            </ul>
+        </aside>
+
+        <main class="main">
+            <div class="content-header">
+                <h2>Аналіз останніх новин</h2>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="source-name">Global News Network</div>
+                    <h3 class="headline">Economic Summit Reaches Historic Climate Agreement</h3>
+                    <div class="news-date">December 2, 2024 • 2:30 PM EST</div>
+                    <div class="analysis status-verified">
+                        <div class="analysis-label">Verified Information</div>
+                        <div class="analysis-text">
+                            Cross-referenced with multiple reliable sources. Official statements from summit participants confirm the agreement details. No signs of manipulation or bias detected.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="source-name">Daily Tribune</div>
+                    <h3 class="headline">Breakthrough Medical Treatment Shows 90% Success Rate</h3>
+                    <div class="news-date">December 2, 2024 • 1:45 PM EST</div>
+                    <div class="analysis status-questionable">
+                        <div class="analysis-label">Requires Verification</div>
+                        <div class="analysis-text">
+                            Claims lack peer-reviewed sources. Study methodology not disclosed. Recommend waiting for independent verification before sharing. Potential for misleading health information.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="source-name">Truth Today</div>
+                    <h3 class="headline">Government Officials Secretly Planning Mass Surveillance Program</h3>
+                    <div class="news-date">December 2, 2024 • 12:15 PM EST</div>
+                    <div class="analysis status-false">
+                        <div class="analysis-label">Disinformation Detected</div>
+                        <div class="analysis-text">
+                            No credible sources provided. Claims contradict official government statements and established policies. Pattern matches known disinformation campaigns. High probability of fabricated content.
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
