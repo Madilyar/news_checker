@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -72,8 +71,9 @@ body {
         margin-bottom: 0.75rem;
     }
 
+    
     .nav-list a {
-        color: #90CDF4;
+        color: #E0E2E5; 
         text-decoration: none;
         font-size: 0.9rem;
         padding: 0.5rem 0.75rem;
@@ -84,7 +84,7 @@ body {
 
         .nav-list a:hover {
             background-color: #2d5a87;
-            color: white;
+            color: #FFFFFF;
             transform: translateX(4px);
         }
 
@@ -129,22 +129,24 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     border: 1px solid #2d5a87;
     transition: all 0.3s ease;
-    
 }
 
-.news-card:hover {
-    transform: translateY(-30px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-}
-.nav-list a:hover {
+    .news-card:hover {
+        transform: translateY(-3px); /* ,, */
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+/* дублікат */
+/* .nav-list a:hover {
     text-decoration: underline;
     color: #f0f0f0;
-}
-    
-.news-card:hover {
+} */
+
+/* дублікат */
+/* .news-card:hover {
     transform: translateY(-30px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-}
+} */
 
 .source-name {
     font-size: 1.1rem;
@@ -154,15 +156,27 @@ body {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #e2e8f0;
 }
-
+/*==============зміни===========*/
 .headline {
     font-size: 1rem;
     font-weight: 600;
-    color: #E0E2E5;
+    color: #E0E2E5; 
     margin-bottom: 0.75rem;
     line-height: 1.4;
 }
 
+
+    .headline a {
+        color: #E0E2E5;
+        text-decoration: none;
+    }
+
+        .headline a:hover {
+            color: #FFFFFF; 
+            text-decoration: underline;
+        }
+
+        /*==============================*/
 .news-date {
     font-size: 0.85rem;
     color: #A0AEC0;
@@ -254,28 +268,4 @@ body {
     .news-card {
         padding: 1rem;
     }
-}
-
-.headline a {
-    color: #E0E2E5; /* Або white, #FFFFFF. Використовуйте #E0E2E5, щоб відповідати іншому тексту */
-    text-decoration: none; /* Прибираємо підкреслення */
-}
-
-.headline a:hover {
-    color: #FFFFFF; /* Колір при наведенні курсору - зробимо трохи світлішим/чисто білим */
-    text-decoration: underline; /* Можна додати підкреслення при наведенні для інтерактивності */
-}
-
-/* Якщо ви також хочете змінити колір посилань у бічній панелі (sidebar),
-які зараз #90CDF4, ви можете зробити це тут: */
-.nav-list a {
-    color: #E0E2E5; /* Змінюємо з #90CDF4 на #E0E2E5, щоб вони були білими як решта тексту */
-    text-decoration: none;
-    /* ... решта стилів ... */
-}
-
-.nav-list a:hover {
-    background-color: #2d5a87;
-    color: #FFFFFF; /* При наведенні курсору - чисто білий */
-    transform: translateX(4px);
 }
