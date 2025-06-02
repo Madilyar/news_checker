@@ -255,3 +255,27 @@ body {
         padding: 1rem;
     }
 }
+
+.headline a {
+    color: #E0E2E5; /* Або white, #FFFFFF. Використовуйте #E0E2E5, щоб відповідати іншому тексту */
+    text-decoration: none; /* Прибираємо підкреслення */
+}
+
+.headline a:hover {
+    color: #FFFFFF; /* Колір при наведенні курсору - зробимо трохи світлішим/чисто білим */
+    text-decoration: underline; /* Можна додати підкреслення при наведенні для інтерактивності */
+}
+
+/* Якщо ви також хочете змінити колір посилань у бічній панелі (sidebar),
+які зараз #90CDF4, ви можете зробити це тут: */
+.nav-list a {
+    color: #E0E2E5; /* Змінюємо з #90CDF4 на #E0E2E5, щоб вони були білими як решта тексту */
+    text-decoration: none;
+    /* ... решта стилів ... */
+}
+
+.nav-list a:hover {
+    background-color: #2d5a87;
+    color: #FFFFFF; /* При наведенні курсору - чисто білий */
+    transform: translateX(4px);
+}
