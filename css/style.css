@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #E0E2E5;
+    background-color: #071e2f;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header header"
+        "main sidebar";
+    gap: 0;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background: linear-gradient(135deg, #1a365d 0%, #2d5a87 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+    .header h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+
+    .header p {
+        font-size: 0.95rem;
+        opacity: 0.9;
+        font-weight: 300;
+    }
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background: #1a365d;
+    padding: 2rem 1.5rem;
+    border-left: 1px solid #2d5a87;
+    box-shadow: -2px 0 4px rgba(0,0,0,0.2);
+}
+
+    .sidebar h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #CBD5E0;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #2d5a87;
+    }
+
+.nav-list {
+    list-style: none;
+}
+
+    .nav-list li {
+        margin-bottom: 0.75rem;
+    }
+
+    .nav-list a {
+        color: #90CDF4;
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: 6px;
+        display: block;
+        transition: all 0.2s ease;
+    }
+
+        .nav-list a:hover {
+            background-color: #2d5a87;
+            color: white;
+            transform: translateX(4px);
+        }
+
+        .nav-list a.active {
+            background-color: #4A5568;
+            color: white;
+        }
+
+/* Main Content */
+.main {
+    grid-area: main;
+    padding: 2rem;
+    background-color: #0d2d44;
+}
+
+.content-header {
+    margin-bottom: 2rem;
+}
+
+    .content-header h2 {
+        font-size: 1.5rem;
+        color: #90CDF4;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .content-header p {
+        color: #CBD5E0;
+        font-size: 0.95rem;
+    }
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.news-card {
+    background: #1a365d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    border: 1px solid #2d5a87;
+    transition: all 0.3s ease;
+}
+
+    .news-card:hover {
+        transform: translateY(-30px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+.source-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #90CDF4;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.headline {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #E0E2E5;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.news-date {
+    font-size: 0.85rem;
+    color: #A0AEC0;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.analysis {
+    background: #0d2d44;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #2d5a87;
+}
+
+.analysis-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    color: #CBD5E0;
+}
+
+.analysis-text {
+    font-size: 0.9rem;
+    color: #CBD5E0;
+    line-height: 1.5;
+}
+
+/* Status indicators */
+.status-verified {
+    border-left-color: #15BD65;
+}
+
+    .status-verified .analysis-label {
+        color: #15BD65;
+    }
+
+.status-questionable {
+    border-left-color: #ed8936;
+}
+
+    .status-questionable .analysis-label {
+        color: #ed8936;
+    }
+
+.status-false {
+    border-left-color: #D03939;
+}
+
+    .status-false .analysis-label {
+        color: #D03939;
+    }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main";
+    }
+
+    .sidebar {
+        border-left: none;
+        border-bottom: 1px solid #e2e8f0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .main {
+        padding: 1rem;
+    }
+
+    .sidebar {
+        padding: 1rem;
+    }
+
+    .news-card {
+        padding: 1rem;
+    }
+}
