@@ -141,10 +141,6 @@ body {
     text-decoration: underline; /* Додаємо підкреслення при наведенні для інтерактивності */
     color: #f0f0f0; /* Можна зробити трохи світлішим від білого, щоб був легкий ефект */
 
-.nav-list a {
-    color: white;
-    text-decoration: none;
-}
 
 .nav-list a:hover {
     text-decoration: underline;
