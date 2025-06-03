@@ -355,5 +355,26 @@
         "overall_summary": "Стаття має маніпулятивний характер через використання емоційних слів та упередженого стилю. Заголовок є клікбейтним, що ставить за мету привернути увагу читачів.",
         "risk_level": "Маніпуляція / Упередженість",
         "created_at": "2025-06-03 14:53:52"
+    },
+    {
+        "id": 18,
+        "title": "Росія за бортом. Визначилися групи збірних на Олімпіаді-2026",
+        "link": "https://champion.com.ua/ukr/ice-hockey/kanada-ta-ssha-diznalisya-supernikiv-viznachivsya-spisok-grup-hokeynogo-turniru-oi-206-1038526/",
+        "source": "Українська правда",
+        "published": "Tue, 03 Jun 2025 15:04:04 +0300",
+        "topic": "Хокей",
+        "sentiment": "neutral",
+        "clickbait_present": 0,
+        "clickbait_explanation": "",
+        "manipulation_present": 0,
+        "manipulation_explanation": "",
+        "false_claims_present": 0,
+        "false_claims_explanation": "",
+        "is_well_written": 1,
+        "is_objective": 1,
+        "style_notes": "Інформативний та нейтральний",
+        "overall_summary": "Стаття нейтрально інформує про склад груп на Олімпіаді-2026 з хокею та заміни збірної Росії. Маніпуляцій та неправдивої інформації не виявлено.",
+        "risk_level": "Підтверджено",
+        "created_at": "2025-06-03 15:13:59"
     }
 ]
