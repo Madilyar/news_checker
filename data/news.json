@@ -418,5 +418,26 @@
         "overall_summary": "The article expresses a negative sentiment towards Chris Cuomo's views on immigration, using emotionally charged language to criticize him and highlight the issue of illegal immigration. Manipulation is evident through the use of loaded language and emotional appeals.",
         "risk_level": "Маніпуляція / Упередженість",
         "created_at": "2025-06-03 12:31:23"
+    },
+    {
+        "id": 21,
+        "title": "На Дніпропетровщині шахраї ошукали родичів зниклих військових на 3 мільйони гривень",
+        "link": "https://www.pravda.com.ua/news/2025/06/3/7515365/",
+        "source": "Українська правда",
+        "published": "Tue, 03 Jun 2025 12:22:56 +0300",
+        "topic": "Шахрайство",
+        "sentiment": "negative",
+        "clickbait_present": 0,
+        "clickbait_explanation": "",
+        "manipulation_present": 0,
+        "manipulation_explanation": "",
+        "false_claims_present": 0,
+        "false_claims_explanation": "",
+        "is_well_written": 1,
+        "is_objective": 1,
+        "style_notes": "Нейтральний",
+        "overall_summary": "Стаття інформує про шахрайство, вчинене організованою групою, яка виманила кошти у родичів зниклих військових. Стаття є об'єктивною та чітко викладає факти.",
+        "risk_level": "Підтверджено",
+        "created_at": "2025-06-03 12:38:48"
     }
 ]
