@@ -124,7 +124,7 @@ body {
 
 .news-card {
     background: #1a365d;
-/*border-radius deleted*/
+    border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     border: 1px solid #2d5a87;
