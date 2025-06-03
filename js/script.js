@@ -53,18 +53,18 @@ function getAnalysisLabel(riskLevel) {
 
 // Функція для отримання назви джерела з URL сторінки
 function getSourceFromUrl() {
-    const path = window.location.pathname; // Отримуємо шлях
-    const fileName = path.substring(path.lastIndexOf('/') + 1); // Отримуємо ім'я файлу
+    const path = window.location.pathname;
+    const fileName = path.substring(path.lastIndexOf('/') + 1);
 
     switch (fileName) {
         case 'index.html':
             return 'Українська правда';
-        case 'News on tsn.html':
+        case 'tsn.html':
             return 'Новини на tsn.ua';
-        case 'The Daily Caller.html':
+        case 'dailycaller.html':
             return 'The Daily Caller';
         default:
-            return 'Українська правда'; // Або інше джерело за замовчуванням, якщо не знайдено
+            return 'Українська правда';
     }
 }
 
