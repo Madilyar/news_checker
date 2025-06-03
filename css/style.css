@@ -50,7 +50,7 @@ body {
     grid-area: sidebar;
     background: #1a365d;
     padding: 2rem 1.5rem;
-    border-left: 1px solid #2d5a87;
+    /*border-left: 1px solid #2d5a87;  deleted  */
     box-shadow: -2px 0 4px rgba(0,0,0,0.2);
 }
 
