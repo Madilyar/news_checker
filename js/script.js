@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             case "Потенційно оманлива":
                 return "Потребує перевірки";
             default:
-                return "Аналіз невідомий";
+                return "Потребує перевірки (Необ'єктивно)";
         }
     }
 
