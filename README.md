@@ -57,7 +57,7 @@
 
 ## Контакти
 
-* **Ваше Ім'я:** [Maksym]
-* **Email:** [madilyarfernus@gmail.com]
+* **Моє ім'я:** [Maksym]
+* **Мій email:** [madilyarfernus@gmail.com]
 
 ---
